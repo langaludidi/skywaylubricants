@@ -2481,3 +2481,47 @@ footer {
     font-size: 27px;
   }
 }
+
+/* Compact tap-to-call footer layout on mobile */
+@media (max-width: 640px) {
+  .footer-contact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  .footer-contact address {
+    grid-column: 1 / -1;
+    padding: 0 0 10px;
+    border-bottom: 1px solid rgba(22, 142, 230, 0.24);
+  }
+  .footer-contact > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 8px;
+    border: 1px solid rgba(101, 194, 255, 0.32);
+    border-radius: 8px;
+    background: rgba(22, 142, 230, 0.1);
+    font-size: clamp(16px, 4.6vw, 18px);
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .footer-contact > a:active {
+    background: rgba(22, 142, 230, 0.24);
+  }
+  .footer-action small {
+    margin-top: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .footer-contact {
+    grid-template-columns: 1fr;
+  }
+  .footer-contact address {
+    grid-column: auto;
+  }
+}
