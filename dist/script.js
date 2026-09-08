@@ -74,11 +74,4 @@ document.querySelector('#quoteForm').addEventListener('submit', async event => {
   event.target.querySelector('button').textContent = 'Enquiry prepared';
 });
 
-document.querySelectorAll('.footer-policies a[href^="#"],a[href="#privacy"],a[href="#terms"]').forEach(link => {
-  link.addEventListener('click', () => {
-    const panel = document.querySelector(link.getAttribute('href'));
-    if (panel?.tagName === 'DETAILS') panel.open = true;
-  });
-});
-
 document.querySelector('#year').textContent = new Date().getFullYear();
