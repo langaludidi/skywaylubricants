@@ -1132,7 +1132,7 @@ footer {
 }
 .footer-logo img {
   display: block;
-  width: min(100%, 340px);
+  width: min(100%, 310px);
   height: auto;
   object-fit: contain;
   margin: 0;
@@ -1570,6 +1570,9 @@ footer {
 @media (max-width: 640px) {
   .wrap {
     width: calc(100% - 40px);
+  }
+  .footer-logo img {
+    width: min(76vw, 255px);
   }
   .section {
     padding: 64px 0;
