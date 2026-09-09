@@ -1128,36 +1128,14 @@ footer {
   align-items: start;
 }
 .footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   margin-bottom: 14px;
 }
 .footer-logo img {
-  width: 58px;
-  height: 62px;
+  display: block;
+  width: min(100%, 340px);
+  height: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  background: transparent;
   margin: 0;
-}
-.footer-logo div {
-  display: flex;
-  flex-direction: column;
-  font-family: "Barlow Condensed", sans-serif;
-  text-transform: uppercase;
-  line-height: 0.76;
-}
-.footer-logo strong {
-  font-size: 38px;
-  letter-spacing: 0.025em;
-  color: #fff;
-}
-.footer-logo span {
-  font-size: 15px;
-  letter-spacing: 0.34em;
-  color: var(--sky);
-  margin-top: 9px;
 }
 .footer-grid > div:first-child > b {
   display: block;
@@ -1251,9 +1229,6 @@ footer {
   }
   .footer-action {
     grid-column: auto;
-  }
-  .footer-logo strong {
-    font-size: 34px;
   }
 }
 .fleet {
