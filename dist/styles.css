@@ -1132,10 +1132,11 @@ footer {
 }
 .footer-logo img {
   display: block;
-  width: min(100%, 310px);
+  width: min(100%, 300px);
   height: auto;
   object-fit: contain;
   margin: 0;
+  background: transparent;
 }
 .footer-grid > div:first-child > b {
   display: block;
@@ -1572,7 +1573,7 @@ footer {
     width: calc(100% - 40px);
   }
   .footer-logo img {
-    width: min(76vw, 255px);
+    width: min(72vw, 240px);
   }
   .section {
     padding: 64px 0;
